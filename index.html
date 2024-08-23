@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed The Street</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- <div class="above-nav" id="top">
+        <div><a href="mailto:murphybilly247@gmail.com"><img src="icons/Group 147.png"><p>murphybilly247@gmail.com</p</a></div>
+        <div><a href="#"><img src="icons/Group 146.png"><p>+2349021185544</p></a></div>
+    </div>
+    <div class="line"></div> -->
+
+    <!-- navigation -->
+    <nav>
+        <img src="icons/image 20.png" class="logo">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="list-flex">
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="btn-row">
+                <button><a href="#help">Explore More</a></button>
+                <button><a id="donateBtn">Donate Now</a></button>
+            </div>
+        </div>
+       
+        <!-- mobile menu -->
+        <div id="menu" class="menu">
+            <!-- <a href="#" class="closebtn" onclick="closeMenu()">&times;</a> -->
+            <a href="#top" class="menu-link">Home</a>
+            <a href="#about" class="menu-link">About Us</a>
+            <a href="#gallery" class="menu-link">Gallery</a>
+            <a href="#events" class="menu-link">Events</a>
+            <a href="#donate" class="menu-link">Donate</a>
+            <a href="#contact" class="menu-link">Contact</a>
+        </div>
+    
+    </nav>
+    <button onclick="scrollToTop()" id="backToTopBtn" class="back-to-top"><i class="fa-solid fa-angle-up"></i></button>
+        
+    
+        
+    <section class="hero scroll-element" id="hero">
+        <div class="col-1">
+            <img src="images/Group 7.png" alt="Donation Stat">
+            <h1>FEED THE STREETS<br> <span>with</span> <br>MURPHY</h1>
+            <p>Feed the Street is a mission to spread love and kindness in the streets of Nigeria by feeding 
+                homeless children and supporting underprivileged families. We believe everyone 
+                deserves to feel valued and loved. We are dedicated to nourishing the nation's streets with 
+                compassion. <i>"Giving is humanity, and humanity is love!""</i>
+            </p>
+            <div class="btn-row">
+                <button><a href="#help">Explore More</a></button>
+                <button><a href="#donate">Donate Now</a></button>
+            </div>
+        </div>
+        <img src="images/Hero.jpg" alt="Children in need">
+    </section>
+
+    <!-- help section -->
+     <section class="help scroll-element" id="help">
+        <div class="container help-flex">
+            <div class="col-1">
+                <h1>We Are Here to Help Them</h1>
+                <p>We are a Community Devoted to Fighting World Hunger by Reaching out to Local Vicinities. One step at a Time Starting from the FCT, Abuja.</p>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    <img src="icons/Group 12.png">
+                    <h1>Healthy Food</h1>
+                    <p>We provide and distribute nutritious food and essential food items to vulnerable children, homeless individuals, and 
+                        underprivileged communities on the streets, promoting health and well-being for those in need.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="icons/Group 10.png">
+                    <h1>Kids Education</h1>
+                    <p>We empower and support the educational journey of gifted streets children by providing access to quality schooling, 
+                        mentorship, and resources, enabling them to realize their academic aspirations and reach their full potential.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="icons/Group 13.png">
+                    <h1>Pure Water</h1>
+                    <p>We strive to ensure access to clean and safe drinking water for vulnerable street children, reducing the risk for 
+                        waterborne illnesses and promoting their overall health and well-being through our water provision initiatives.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="icons/Group 8.png">
+                    <h1>Medical Care</h1>
+                    <p>We deliver comprehensive medical outreach services, including healthcare screenings, treatments, and preventive 
+                        care, to vulnerable individuals, particularly sick children and expectant mothers in the streets.
+                    </p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- about us  -->
+      <section class="about-us scroll-element" id="about">
+        <div class="col-1">
+            <h1>About Us</h1>
+            <h2>FEED THE STREETS</h2>
+            <p>We are a Community Devoted to Fighting World Hunger by Reaching out to Local Vicinities. One Step at a Time, we are starting 
+                from the FCT, Abuja. 
+            </p>
+            <p>
+                Feed the Street is a mission to spread love and kindness in Abuja by feeding homeless children and supporting undeprivileged 
+                families. We believe everyone deserves to feel valued and loved. We are dedicated to nourishing Abuja streets with compassion. 
+                Giving is humanity, and humanity is love.
+            </p>
+            <p>Make us worthy, Lord, to serve those throughout the world who live and die in poverty and Hunger. Give them, through our hands, 
+                this day their daily bread; and by our understanding love, give peace and joy. Amen.
+            </p>
+        </div>
+        <img src="images/about us.jpg" alt="feed the streets logo">
+      </section>
+
+      <!-- stories -->
+       <section class="stories scroll-element">
+        <div class="container">
+            <div class="col-1">
+                <h1>Stories of Hope and Transformation</h1>
+                <img src="images/Team.jpg" alt="team group photo">
+            </div>
+            <div class="col-2">
+                <div class="scroll-element">
+                    <h1>2000+</h1>
+                    <p>We are proud to announce that our organisation has positively impacted over 200 lives</p>
+                </div>
+                <div class="scroll-element">
+                    <h1>20+</h1>
+                    <p>Our charity organisation has made a meaningful impact in over 36 States in Nigeria.</p>
+                </div>
+                <div class="scroll-element">
+                    <h1>100+</h1>
+                    <p>Our charity organsation thrives on the remarkable dedication of over 100+ Volunteers</p>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- support -->
+        <section class="support scroll-element">
+            <img src="images/image 32.png" alt="Kids recieving relief packages">
+            <div class="col-2">
+                <h1>Supporting Kids in Need</h1>
+                <p>
+                    At Feed The Street With MURPHY, we believe that every act of kindness has the power to transform lives 
+                    and make the world a better place. We are a passionate community of volunteers and donors dedicated to 
+                    creating positive change in the World.<span id="dots">..</span>
+                    <span id="more-text">
+                        Through our collective efforts, we aim to uplift those in need, offering not just food, but hope and 
+                        support to build a brighter future. Our mission goes beyond feeding the hungry; we strive to empower 
+                        individuals, foster community connections, and inspire others to join us in our commitment to making a 
+                        lasting impact.
+                    </span>
+                </p>
+                <button onclick="readMore()" class="read-more-btn">Read More</button>
+            </div>
+        </section>
+
+        <!-- Donate -->
+         <section class="donate scroll-element" id="donate">
+            <div class="container donate-flex">
+                <div class="col-1 scroll-element">
+                    <h1>Donate To Make An Impact</h1>
+                    <p>Participate in this selfless act by donating to Feed the Streets, where every contribution, big or small, 
+                        supports the less privileged.
+                    </p>
+                </div>
+                <div class="col-2 scroll-element">
+                    <div class="card scroll-element">
+                        <div><img src="images/image 37.png"><p>Water</p></div>
+                        <h1>Quenching Thirst</h1>
+                        <p>Collaborate with us to bring life-changing, pure, clean, and safe drinking water to marginalized 
+                            communities in need throughout Nigeria.  
+                        </p>
+                        <button class="donate-btn">Donate Now</button>
+                    </div>
+                    <div class="card scroll-element">
+                        <div><img src="images/image 38.png"><p>Education</p></div>
+                        <h1>School Counseling</h1>
+                        <p>Quality education is a potent instrument for breaking the poverty cycle, illuminating a path to a 
+                            brighter, more prosperous future for marginalized children.  
+                        </p>
+                        <button class="donate-btn">Donate Now</button>
+                    </div>
+                    <div class="card scroll-element">
+                        <div><img src="images/image 39.png"><p>Feeding</p></div>
+                        <h1>Feeding Hope</h1>
+                        <p>Our initiatives focus on addressing the hunger crisis  by distributing wholesome, nutritious meals 
+                            to families affected by food insecurity and hardship.  
+                        </p>
+                        <button class="donate-btn">Donate Now</button>
+                    </div>
+                    <div class="card scroll-element">
+                        <div><img src="images/image 36.png"><p>Medical</p></div>
+                        <h1>Medical Outreach</h1>
+                        <p>Feed the Street with Murphy extends a helping hand, delivering essential medical outreach to disadvantaged 
+                            street kids and pregnant ladies, promoting health and hope.  
+                        </p>
+                        <button class="donate-btn">Donate Now</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Trigger Button -->
+<!-- <button id="donateBtn">Donate</button> -->
+
+<!-- The Modal -->
+<div id="donationModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <!-- Left Section -->
+            <div class="modal-left">
+                <img src="your-image-path" alt="UNICEF" class="modal-image">
+                <h3>You Can Make a Difference Right Now</h3>
+                <p>UNICEF responds to almost 300 humanitarian emergencies in 90 countries every year. Your gift enables UNICEF to reach children wherever and whenever they need help. Donations are 100% tax-deductible. <strong>Less than 3% of your gift goes to administrative costs.</strong></p>
+            </div>
+
+            <!-- Right Section -->
+            <div class="modal-right">
+                <h3>Secure Donation</h3>
+                <form>
+                    <label><input type="radio" name="donationType" checked> Give Once</label>
+                    <label><input type="radio" name="donationType"> Monthly</label>
+                    <div class="amount-options">
+                        <button>$700</button>
+                        <button>$400</button>
+                        <button>$300</button>
+                        <button>$200</button>
+                        <button>$140</button>
+                        <button>$100</button>
+                    </div>
+                    <input type="text" placeholder="$ 120 USD">
+                    <label><input type="checkbox"> Designate to children who need help.</label>
+                    <label><input type="checkbox"> Give in honor or in memory</label>
+                    <button type="submit">Donate</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+         <!-- together -->
+          <section class="together scroll-element">
+            <div class="together-flex">
+                <div class="col-1 scroll-element">
+                    <h1>Together, we Change Lives</h1>
+                    <p>Over the years, Feed The Street With MURPHY has made a significant impact in the lives of countless individuals and 
+                        communities. Here are some key highlights of our work that we have done;
+                    </p>
+                </div>
+                <div class="col-2 scroll-element">
+                    <div class="col-flex scroll-element">
+                        <img src="icons/Group 168.png">
+                        <div>
+                            <h1>Education for All</h1>
+                            <p>Our Organization has bridged the knowledge gap for 100 underprivileged children, providing education and scholarship
+                                 opportunities to proper them beyond poverty's limitations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-flex scroll-element">
+                        <img src="icons/Group 168.png">
+                        <div>
+                            <h1>Access to Clean Water</h1>
+                            <p>Our Organization has made a profound impact by delivering clean and safe drinking water to 50 communities, 
+                                dramatically decreasing the prevalence of waterborne diseases
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-flex scroll-element">
+                        <img src="icons/Group 168.png">
+                        <div>
+                            <h1>Empowering People</h1>
+                            <p>FEED THE STREETS has empowered individuals by providing essential resources, including food, clothing, and 
+                                educational support, to those in need. Through community outreach and targeted programs, we have 
+                                uplifted lives, fostering a sense of hope and self-sufficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="together-flex-2 scroll-element">
+               <img src="images/helping 2.jpg" alt="distribution of relief packages by FTS"> 
+               <div class="col">
+                <img src="images/helping 3.jpg" alt="distribution of relief packages by FTS">
+                <img src="images/helping 4.jpg" alt="distribution of relief packages by FTS">
+               </div>
+            </div>
+        </section>
+
+        <!-- events -->
+        <section class="events scroll-element" id="events">
+            <div class="container events-flex">
+                <div class="col-1">
+                    <h1>Upcoming event</h1>
+                    <h2>Ready to Join our Latest <br>Upcoming Events</h2>
+                    <p>Be part of our community that nurtures young minds, instilling a passion for education and setting them 
+                        up success. Collaborate with us to kindle a love of learning, creativity, and selflessness, making a lasting 
+                        impact. The choice is yours; will you embrace the light of generosity and progress or succumb to the darkness of inaction?
+                    </p>
+                </div>
+                <div class="col-2">
+                    <img src="images/image 51.png" alt="a flyer of FTS upcoming event">
+                    <img src="images/image 52.png" alt="a flyer of FTS upcoming event">
+                </div>
+            </div>
+        </section>
+
+        <!-- gallery -->
+        <div class="gallery scroll-element" id="gallery">
+            <div class="col-1">
+                <h1>Gallery</h1>
+                <h2>Our Photo Gallery</h2>
+            </div>
+            
+            <div class="gallery-row scroll-element">
+                <button id="see-more-btn">See all</button>
+                <div class="gallery-item">
+                    <img src="images/gallery 5.jpg" alt="Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery 12.jpg" alt="Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery 13.jpg" alt="Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery 10.jpg" alt="Image 4">
+                </div>
+            </div>
+            <div class="gallery-row hidden">
+                <div class="gallery-item">
+                    <img src="images/gallery 2.jpg" alt="Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery 17.jpg" alt="Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery 20.jpg" alt="Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery 18.jpg" alt="Image 4">
+                </div>
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+        
+        <!-- Modal for expanded image -->
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="expanded-img">
+        </div>
+
+        <!-- contact -->
+        <section class="contact" id="contact">
+            <div class="container contact-flex">
+                <div class="header">
+                    <p>&#8226</p>
+                    <h1>Contact</h1>
+                    <p>&#8226</p>
+                </div>
+                <h1>Get in touch</h1>
+                <div class="contact-flex-2">
+                    <div class="col-1-flex">
+                        <div class="col-1">
+                            <img src="icons/Group 149.png">
+                            <div class="line"></div>
+                            <div class="sub-col">
+                              <h2>PHONE:</h2>
+                              <p><a href="tel:+2349021185544">+2349021185544</a></p>
+                            </div>  
+                        </div>
+                        <div class="col-1">
+                            <img src="icons/Group 150.png">
+                            <div class="line"></div>
+                            <div class="sub-col">
+                                <h2>ADDRESS:</h2>
+                                <p>FCT, Abuja, Nigeria.</p>
+                            </div>  
+                        </div>
+                        <div class="col-1">
+                            <img src="icons/Group 151.png">
+                            <div class="line"></div>
+                            <div class="sub-col">
+                                <h2>EMAIL:</h2>
+                                <p><a href="mailto:murphybilly247@gmail.com">murphybilly247@gmail.com</a></p>
+                            </div>  
+                        </div>
+                    </div>
+                    
+                    <div class="col-2">
+                        <form class="contact-form" id="contact-clear" action="https://formspree.io/f/xkgwprop" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Name:" required>
+                                <input type="email" name="email" placeholder="Email:" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" placeholder="Subject:" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Message:" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">SEND</button>
+                        </form>
+                        <p id="form-success-message">Your form was sent successfully!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- footer -->
+        
+         <footer>
+            <div class="container footer-flex">
+                <div class="col">
+                    <div>
+                        <h1>FEED THE STREETS WITH MURPHY</h1>
+                        <P>Feed the Street is a mission to spread love and kindness in 
+                        Abuja by feeding homeless children and supporting undeprivileged
+                        families. We believe everyone deserves to feel valued and loved.
+                        We are dedicated to nourishing Abuja streets with compassion. 
+                        Giving is humanity, and humanity is love.
+                        </P>
+                        <p>
+    
+                        </p>
+                    </div>
+                    <div> 
+                        <h1>Explore</h1>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Donation</a></li>
+                            <li><a href="#">Event</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1>Contact</h1>
+                        <ul>
+                            <li><a href=""><img src="icons/Group 154.png">murphybilly247@gmail.com</a></li>
+                            <li><a href=""><img src="icons/Group 152.png">+2349021185544</a></li>
+                            <li><a href=""><img src="icons/Group 153.png">FCT, Abuja, Nigeria.</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a href="#"><img src="icons/Twitter  - png.png" alt=""></a>
+                    <a href="#"><img src="icons/Instagram - png.png" alt=""></a>
+                    <a href="#"><img src="icons/Facebook - jpeg.png" alt=""></a>
+                </div>
+                <p class="copyright-text">&copy; 2024 FEED THE STREETS. All rights reserved.</p>
+                <div class="line"></div>
+                
+            </div>
+            
+         </footer>
+            
+        
+        
+
+
+
+
+                
+
+
+
+
+       <!-- custom js  -->
+        <script>
+            // mobile menu
+
+                function toggleMenu() {
+                const hamburger = document.querySelector('.hamburger');
+                const menu = document.getElementById("menu");
+                if (menu.style.width === "0px" || menu.style.width === "") {
+                    openMenu();
+                } else {
+                    closeMenu();
+                }
+               
+                hamburger.classList.toggle("change");
+            }
+
+            function openMenu() {
+                
+                document.getElementById("menu").style.width = "100%";
+                // document.body.style.marginRight = "250px"; // Push content to the left
+                document.body.style.overflow = "hidden"; // Disable scrolling
+
+                const hamburger = document.querySelector('.hamburger');
+                hamburger.classList.remove("change");
+            }
+
+            function closeMenu() {
+                document.getElementById("menu").style.width = "0";
+                document.body.style.marginRight = "0"; // Reset content position
+                document.body.style.overflow = "auto"; // Re-enable scrolling
+
+                const hamburger = document.querySelector('.hamburger');
+                hamburger.classList.add("change"); // Ensure the hamburger menu returns to its original state
+            }
+
+            function closeLinkMenu(){
+                document.getElementById("menu").style.width = "0";
+                document.body.style.marginRight = "0"; // Reset content position
+                document.body.style.overflow = "auto"; // Re-enable scrolling
+
+                const hamburger = document.querySelector('.hamburger');
+                hamburger.classList.remove("change"); // Ensure the hamburger menu returns to its original stat
+            }
+            // Automatically close the menu after clicking a link
+            document.querySelectorAll('.menu-link').forEach(link => {
+                link.addEventListener('click', closeLinkMenu);
+            }); 
+    
+    
+    
+    
+
+
+
+                        // Show/Hide the Back-to-Top Button
+            window.onscroll = function() {
+                const backToTopBtn = document.getElementById("backToTopBtn");
+                let navbar = document.getElementsByTagName("nav")[0];
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    backToTopBtn.style.display = "block";
+                } else {
+                    backToTopBtn.style.display = "none";
+                }
+                        // Add shadow when the page is scrolled down
+                if (window.pageYOffset > 0) {
+                    navbar.classList.add("shadow");
+                } else {
+                    navbar.classList.remove("shadow");
+                }
+            };
+
+            // Scroll to the top of the page
+            function scrollToTop() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+            }
+
+
+
+            // read more
+            function readMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more-text");
+            var btnText = document.querySelector(".read-more-btn");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read More";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read Less";
+                    moreText.style.display = "inline";
+                }
+            }
+            // gallery
+            document.getElementById("see-more-btn").addEventListener("click", function() {
+            const hiddenRows = document.querySelectorAll(".gallery-row.hidden");
+                if (hiddenRows.length > 0) {
+                    hiddenRows[0].classList.remove("hidden");
+                    if (hiddenRows.length === 1) {
+                        this.style.display = 'none'; // Hide the button if no more rows are hidden
+                    }
+                }
+            });
+
+            const galleryItems = document.querySelectorAll(".gallery-item img");
+            const modal = document.getElementById("modal");
+            const modalImg = document.getElementById("expanded-img");
+
+            galleryItems.forEach(item => {
+                item.addEventListener("click", function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    document.querySelectorAll(".gallery-item img").forEach(img => {
+                        if (img !== this) {
+                            img.classList.add("blur");
+                        }
+                    });
+                });
+            });
+
+            document.querySelector(".close").addEventListener("click", function() {
+                modal.style.display = "none";
+                document.querySelectorAll(".gallery-item img").forEach(img => {
+                    img.classList.remove("blur");
+                });
+            });
+
+                //scoll-up animation on load
+                    document.addEventListener("DOMContentLoaded", function() {
+            let scrollElements = document.querySelectorAll(".scroll-element");
+
+            function elementInView(el, offset = 0) {
+                let elementTop = el.getBoundingClientRect().top;
+
+                return (
+                    elementTop <= (window.innerHeight || document.documentElement.clientHeight) - offset
+                );
+            }
+
+            function displayScrollElement() {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 150)) {
+                        el.classList.add("in-view");
+                    } else {
+                        el.classList.remove("in-view");
+                    }
+                })
+            }
+
+            window.addEventListener("scroll", () => {
+                displayScrollElement();
+            });
+
+            // Trigger animation on page load
+            displayScrollElement();
+        });
+
+            //Form clear submit
+            
+    const form = document.getElementById('contact-clear');
+    const successMessage = document.getElementById('form-success-message');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                // Clear the form fields
+                form.reset();
+                
+                // Show the custom success message
+                successMessage.style.display = 'block';
+
+                // Optionally, hide the success message after a few seconds
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 5000); // Hide after 5 seconds
+            } else {
+                alert('Oops! There was a problem submitting your form.');
+            }
+        }).catch(error => {
+            console.error('Form submission error:', error);
+            alert('There was a problem submitting your form.');
+        });
+    });
+
+
+                // Get the modal
+            var donateModal = document.getElementById("donationModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("donateBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            donateModal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            donateModal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == donateModal) {
+                donateModal.style.display = "none";
+            }
+        }
+
+        </script>
+
+    
+                
+        <script src="https://kit.fontawesome.com/ce7b35a9ec.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

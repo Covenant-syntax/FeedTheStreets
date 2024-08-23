@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Want Coffee';
+    src: url('fonts/Want-Coffee.eot');
+    src: url('fonts/Want-Coffee.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Want-Coffee.woff2') format('woff2'),
+         url('fonts/Want-Coffee.woff') format('woff'),
+         url('fonts/Want-Coffee.ttf')  format('truetype'),
+         url('fonts/Want-Coffee.svg#Want Coffee') format('svg');
+}
