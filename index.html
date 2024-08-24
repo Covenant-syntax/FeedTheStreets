@@ -207,7 +207,7 @@
                         <p>Collaborate with us to bring life-changing, pure, clean, and safe drinking water to marginalized 
                             communities in need throughout Nigeria.  
                         </p>
-                        <button class="donate-btn">Donate Now</button>
+                        <button class="donate-btn"><a href="payment.html">Donate Now</a></button>
                     </div>
                     <div class="card scroll-element">
                         <div><img src="images/image 38.png"><p>Education</p></div>
@@ -215,7 +215,7 @@
                         <p>Quality education is a potent instrument for breaking the poverty cycle, illuminating a path to a 
                             brighter, more prosperous future for marginalized children.  
                         </p>
-                        <button class="donate-btn">Donate Now</button>
+                        <button class="donate-btn"><a href="payment.html">Donate Now</a></button>
                     </div>
                     <div class="card scroll-element">
                         <div><img src="images/image 39.png"><p>Feeding</p></div>
@@ -223,15 +223,15 @@
                         <p>Our initiatives focus on addressing the hunger crisis  by distributing wholesome, nutritious meals 
                             to families affected by food insecurity and hardship.  
                         </p>
-                        <button class="donate-btn">Donate Now</button>
+                        <button class="donate-btn"><a href="payment.html">Donate Now</a></button>
                     </div>
                     <div class="card scroll-element">
                         <div><img src="images/image 36.png"><p>Medical</p></div>
                         <h1>Medical Outreach</h1>
-                        <p>Feed the Street with Murphy extends a helping hand, delivering essential medical outreach to disadvantaged 
+                        <p>We extend a helping hand, delivering essential medical outreach to disadvantaged 
                             street kids and pregnant ladies, promoting health and hope.  
                         </p>
-                        <button class="donate-btn">Donate Now</button>
+                        <button class="donate-btn"><a href="payment.html">Donate Now</a></button>
                     </div>
 
                 </div>
@@ -484,7 +484,6 @@
             function openMenu() {
                 
                 document.getElementById("menu").style.width = "100%";
-                // document.body.style.marginRight = "250px"; // Push content to the left
                 document.body.style.overflow = "hidden"; // Disable scrolling
 
                 const hamburger = document.querySelector('.hamburger');
@@ -668,25 +667,10 @@
             donateModal.style.display = "none"
         }
 
-        // Get the <span> element that closes the modal
-        // var span = document.getElementsByClassName("close")[0];
-
         // When the user clicks the button, open the modal 
         btn.onclick = function() {
             donateModal.style.display = "block";
-        }
-
-        // // When the user clicks on <span> (x), close the modal
-        // span.onclick = function() {
-        //     donateModal.style.display = "none";
-        // }
-
-        // When the user clicks anywhere outside of the modal, close it
-        // window.onclick = function(event) {
-        //     if (event.target == donateModal) {
-        //         donateModal.style.display = "none";
-        //     }
-        // }
+        };
 
             
         </script>

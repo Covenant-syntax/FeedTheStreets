@@ -156,9 +156,10 @@ nav ul li a:hover{
     border-radius: 9px;
     font-size: 13px;
     background: #411605;
-    transition: transform 0.1s ease-out;
+    transition: 0.2s ease-out;
 }
 .btn-row button a{
+    padding: 10px;
     color: #fff;
 }
 .btn-row button:first-child{
@@ -168,6 +169,9 @@ nav ul li a:hover{
 }
 .btn-row button:first-child a{
     color: #411605;
+}
+.btn-row button:last-child:hover{
+    background-color: #6b0202;
 }
 .menu{
     display: none;
@@ -691,15 +695,19 @@ nav ul li a:hover{
 .donate-flex .col-2 .card p{
     margin: 10px 5px 5px 10px;
 }
-.donate-btn{
+.donate-flex .col-2 .card .donate-btn{
     padding: 8px 25px;
     background-color: #411605;
-    font-size: 12px;
-    font-weight: 400;
-    color: #fff;
     border-radius: 6px;
     border: none;
     margin-top: 15px;
+    margin-left: 10px;
+}
+.donate-flex .col-2 .card .donate-btn a{
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
 }
 @media(max-width: 991px) {
     .donate{
