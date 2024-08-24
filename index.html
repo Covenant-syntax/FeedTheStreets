@@ -50,7 +50,7 @@
             </ul>
             <div class="btn-row">
                 <button><a href="#help">Explore More</a></button>
-                <button><a id="donateBtn">Donate Now</a></button>
+                <button><a href="payment.html">Donate Now</a></button>
             </div>
         </div>
        
@@ -81,7 +81,7 @@
             </p>
             <div class="btn-row">
                 <button><a href="#help">Explore More</a></button>
-                <button><a href="#donate">Donate Now</a></button>
+                <button><a href="payment.html">Donate Now</a></button>
             </div>
         </div>
         <img src="images/Hero.jpg" alt="Children in need">
@@ -148,22 +148,22 @@
       </section>
 
       <!-- stories -->
-       <section class="stories scroll-element">
+       <section class="stories scroll-element" id="stats">
         <div class="container">
             <div class="col-1">
                 <h1>Stories of Hope and Transformation</h1>
                 <img src="images/Team.jpg" alt="team group photo">
             </div>
             <div class="col-2">
-                <div class="scroll-element">
-                    <h1>2000+</h1>
+                <div class="scroll-element counter">
+                    <h1>200+</h1>
                     <p>We are proud to announce that our organisation has positively impacted over 200 lives</p>
                 </div>
-                <div class="scroll-element">
-                    <h1>20+</h1>
+                <div class="scroll-element counter">
+                    <h1>36</h1>
                     <p>Our charity organisation has made a meaningful impact in over 36 States in Nigeria.</p>
                 </div>
-                <div class="scroll-element">
+                <div class="scroll-element counter">
                     <h1>100+</h1>
                     <p>Our charity organsation thrives on the remarkable dedication of over 100+ Volunteers</p>
                 </div>
@@ -238,44 +238,6 @@
             </div>
         </section>
 
-        <!-- Trigger Button -->
-<!-- <button id="donateBtn">Donate</button> -->
-
-<!-- The Modal -->
-<div id="donationModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="modal-body">
-            <!-- Left Section -->
-            <div class="modal-left">
-                <img src="your-image-path" alt="UNICEF" class="modal-image">
-                <h3>You Can Make a Difference Right Now</h3>
-                <p>UNICEF responds to almost 300 humanitarian emergencies in 90 countries every year. Your gift enables UNICEF to reach children wherever and whenever they need help. Donations are 100% tax-deductible. <strong>Less than 3% of your gift goes to administrative costs.</strong></p>
-            </div>
-
-            <!-- Right Section -->
-            <div class="modal-right">
-                <h3>Secure Donation</h3>
-                <form>
-                    <label><input type="radio" name="donationType" checked> Give Once</label>
-                    <label><input type="radio" name="donationType"> Monthly</label>
-                    <div class="amount-options">
-                        <button>$700</button>
-                        <button>$400</button>
-                        <button>$300</button>
-                        <button>$200</button>
-                        <button>$140</button>
-                        <button>$100</button>
-                    </div>
-                    <input type="text" placeholder="$ 120 USD">
-                    <label><input type="checkbox"> Designate to children who need help.</label>
-                    <label><input type="checkbox"> Give in honor or in memory</label>
-                    <button type="submit">Donate</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
 
          <!-- together -->
@@ -500,14 +462,9 @@
         
         
 
+         
 
-
-
-                
-
-
-
-
+         <script src="https://js.paystack.co/v1/inline.js"></script>
        <!-- custom js  -->
         <script>
             // mobile menu
@@ -555,12 +512,7 @@
             document.querySelectorAll('.menu-link').forEach(link => {
                 link.addEventListener('click', closeLinkMenu);
             }); 
-    
-    
-    
-    
-
-
+          
 
                         // Show/Hide the Back-to-Top Button
             window.onscroll = function() {
@@ -710,32 +662,36 @@
 
         // Get the button that opens the modal
         var btn = document.getElementById("donateBtn");
+        var backHome = document.querySelector(".go-back-btn");
+
+        backHome.onclick = function(){
+            donateModal.style.display = "none"
+        }
 
         // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+        // var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks the button, open the modal 
         btn.onclick = function() {
             donateModal.style.display = "block";
         }
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            donateModal.style.display = "none";
-        }
+        // // When the user clicks on <span> (x), close the modal
+        // span.onclick = function() {
+        //     donateModal.style.display = "none";
+        // }
 
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == donateModal) {
-                donateModal.style.display = "none";
-            }
-        }
+        // window.onclick = function(event) {
+        //     if (event.target == donateModal) {
+        //         donateModal.style.display = "none";
+        //     }
+        // }
 
+            
         </script>
-
     
-                
         <script src="https://kit.fontawesome.com/ce7b35a9ec.js" crossorigin="anonymous"></script>
-    
+        
 </body>
 </html>

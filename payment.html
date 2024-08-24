@@ -3,31 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paystack Integration</title>
+    <title>Donation</title>
     <link rel="stylesheet" href="payment.css">
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="container">
-        <h2>Payment Form</h2>
-        <form id="paymentForm">
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" required>
+    <!-- The Modal -->
+<div id="donationModal" class="modal">
+    <div class="modal-content">
+        <!-- <span class="close">&times;</span> -->
+        <div class="modal-body">
+            <!-- Left Section -->
+            <div class="modal-left" id="modalLeft">
+                <img src="images/gallery 19.jpg" alt="FTS image" class="modal-image">
+                <div>
+                    <img src="icons/image 20.png" alt="MTE logo">
+                    <h3>You Can Make a Difference Right Now</h3>
+                    <p>Here are the <strong>STATISTICAL FACTS ABOUT WORLD HUNGER:</strong></p>
+                    <p>&#x2022 More than 20% of the population can't afford a good meal.</p>
+                    <p>&#x2022 More than 2 million people don't have homes to live in.</p>
+                    <p>&#x2022 40% of people who are homeless have gone one or more days without eating.</p>
+                </div>
+                <div class="btn">
+                    <button class="go-back-btn"><a href="index.html"><i class="fa-solid fa-angles-left"></i>Back</a></button>
+                    <button class="proceed-btn" id="proceed"><a href="#">Proceed</a></button>
+                </div>
             </div>
-            <div class="input-group">
-                <label for="amount">Amount</label>
-                <input type="number" id="amount" required>
+
+
+
+            <!-- Right Section -->
+            <div class="modal-right" id="modalRight">
+                <h3><img src="icons/safe.png" alt=""></i>Secure Donation</h3>
+                <form id="paymentForm">
+                    <input type="email" id="email" placeholder="e.g your-email@gmail.com" required>
+                    <input type="number" id="amount" step="0.01" min="0" placeholder="NGN" required>
+                    <button type="submit" onclick="payWithPaystack()">Donate</button>
+                    <button class="go-back-btn"><a href="index.html"><i class="fa-solid fa-angles-left"></i>Back</a></button>
+                </form>
+
             </div>
-            <button type="submit" onclick="payWithPaystack()">Pay Now</button>
-        </form>
+        </div>
     </div>
-    <script src="https://js.paystack.co/v1/inline.js"></script>
+</div>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script src="https://kit.fontawesome.com/ce7b35a9ec.js" crossorigin="anonymous"></script>
+<script>
+    var proceedBtn = document.getElementById("proceed");
+    var leftModal = document.getElementById("modalLeft");
+    var rightModal = document.getElementById("modalRight");
 
+    proceedBtn.onclick = function(){
+        leftModal.style.display = "none"
+        rightModal.style.display = "block"
+    }
 
-    <script>
-            // script.js
-        function payWithPaystack() {
+    //paystack integration
+    function payWithPaystack() {
         event.preventDefault();
 
             let handler = PaystackPop.setup({
@@ -49,8 +84,8 @@
             });
 
             handler.openIframe();
+            document.getElementById("paymentForm").reset();
          }
-
-    </script>
+</script>
 </body>
 </html>

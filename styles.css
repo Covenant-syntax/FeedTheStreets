@@ -709,6 +709,7 @@ nav ul li a:hover{
         margin-top: 6px;
     }
 }
+
 /* together */
 .together{
     width: 90%;
@@ -808,90 +809,6 @@ nav ul li a:hover{
     .together-flex-2{
         margin-top: 20px;
     }
-}
-
-/* Modal Structure */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto; /* 5% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Modal Left Section */
-.modal-left {
-    width: 45%;
-    padding-right: 20px;
-}
-
-.modal-left img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-/* Modal Right Section */
-.modal-right {
-    width: 45%;
-}
-
-.amount-options button {
-    margin: 5px;
-    padding: 10px;
-    font-size: 18px;
-}
-
-.modal-right input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 18px;
-}
-
-.modal-right button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.modal-right button[type="submit"]:hover {
-    background-color: #0056b3;
 }
 
 
@@ -1411,10 +1328,10 @@ footer a{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 30px;
+    bottom: 15px;
 }
 .footer-flex .copyright-text{
-    font-size: clamp(10px, 0.8rem + 0.8vw, 14px);
+    font-size: clamp(10px, 0.5rem + 0.5vw, 14px);
     position: absolute;
     bottom: 15px;
 }
