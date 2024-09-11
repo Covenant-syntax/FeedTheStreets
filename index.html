@@ -25,16 +25,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
 </head>
 <body>
+    
 
-    <!-- <div class="above-nav" id="top">
-        <div><a href="mailto:murphybilly247@gmail.com"><img src="icons/Group 147.png"><p>murphybilly247@gmail.com</p</a></div>
-        <div><a href="#"><img src="icons/Group 146.png"><p>+2349021185544</p></a></div>
-    </div>
-    <div class="line"></div> -->
 
     <!-- navigation -->
     <nav>
-        <img src="icons/image 20.png" class="logo">
+        <img src="icons/new-logo.png" class="logo">
         <div class="hamburger" onclick="toggleMenu()">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -47,6 +43,7 @@
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="merch.html">Shop</a></li>
             </ul>
             <div class="btn-row">
                 <button><a href="#help">Explore More</a></button>
@@ -56,13 +53,14 @@
        
         <!-- mobile menu -->
         <div id="menu" class="menu">
-            <!-- <a href="#" class="closebtn" onclick="closeMenu()">&times;</a> -->
             <a href="#top" class="menu-link">Home</a>
             <a href="#about" class="menu-link">About Us</a>
             <a href="#gallery" class="menu-link">Gallery</a>
             <a href="#events" class="menu-link">Events</a>
             <a href="#donate" class="menu-link">Donate</a>
             <a href="#contact" class="menu-link">Contact</a>
+            <a href="merch.html" class="menu-link">Shop</a>
+            <p class="copyright-text mobile">&copy; 2024 FEED THE STREETS. All rights reserved.</p>
         </div>
     
     </nav>
@@ -73,7 +71,7 @@
     <section class="hero scroll-element" id="hero">
         <div class="col-1">
             <img src="images/Group 7.png" alt="Donation Stat">
-            <h1>FEED THE STREETS<br> <span>with</span> <br>MURPHY</h1>
+            <h1>FEED THE STREETS<br> <span>with</span> <br>MURPHY THA PREACHER</h1>
             <p>Feed the Street is a mission to spread love and kindness in the streets of Nigeria by feeding 
                 homeless children and supporting underprivileged families. We believe everyone 
                 deserves to feel valued and loved. We are dedicated to nourishing the nation's streets with 
@@ -156,7 +154,7 @@
             </div>
             <div class="col-2">
                 <div class="scroll-element counter">
-                    <h1>200+</h1>
+                    <h1 id="count">200+</h1>
                     <p>We are proud to announce that our organisation has positively impacted over 200 lives</p>
                 </div>
                 <div class="scroll-element counter">
@@ -384,7 +382,7 @@
                             <div class="line"></div>
                             <div class="sub-col">
                                 <h2>EMAIL:</h2>
-                                <p><a href="mailto:murphybilly247@gmail.com">murphybilly247@gmail.com</a></p>
+                                <p><a href="mailto:feedthestreets2024@gmail.com">feedthestreets2024@gmail.com</a></p>
                             </div>  
                         </div>
                     </div>
@@ -441,15 +439,17 @@
                     <div>
                         <h1>Contact</h1>
                         <ul>
-                            <li><a href=""><img src="icons/Group 154.png">murphybilly247@gmail.com</a></li>
+                            <li><a href="mail"><img src="icons/Group 154.png">feedthestreets2024@gmail.com</a></li>
                             <li><a href=""><img src="icons/Group 152.png">+2349021185544</a></li>
                             <li><a href=""><img src="icons/Group 153.png">FCT, Abuja, Nigeria.</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="socials">
+                    <a href="https://www.instagram.com/feedthestreets.mte" target="_blank" rel="noopener noreferrer">
+                        <img src="icons/Instagram - png.png" alt="instagram">
+                    </a>
                     <a href="#"><img src="icons/Twitter  - png.png" alt=""></a>
-                    <a href="#"><img src="icons/Instagram - png.png" alt=""></a>
                     <a href="#"><img src="icons/Facebook - jpeg.png" alt=""></a>
                 </div>
                 <p class="copyright-text">&copy; 2024 FEED THE STREETS. All rights reserved.</p>
@@ -463,219 +463,11 @@
         
 
          
-
+         <script src="script.js"></script>
          <script src="https://js.paystack.co/v1/inline.js"></script>
-       <!-- custom js  -->
-        <script>
-            // mobile menu
-
-                function toggleMenu() {
-                const hamburger = document.querySelector('.hamburger');
-                const menu = document.getElementById("menu");
-                if (menu.style.width === "0px" || menu.style.width === "") {
-                    openMenu();
-                } else {
-                    closeMenu();
-                }
-               
-                hamburger.classList.toggle("change");
-            }
-
-            function openMenu() {
-                
-                document.getElementById("menu").style.width = "100%";
-                document.body.style.overflow = "hidden"; // Disable scrolling
-
-                const hamburger = document.querySelector('.hamburger');
-                hamburger.classList.remove("change");
-            }
-
-            function closeMenu() {
-                document.getElementById("menu").style.width = "0";
-                document.body.style.marginRight = "0"; // Reset content position
-                document.body.style.overflow = "auto"; // Re-enable scrolling
-
-                const hamburger = document.querySelector('.hamburger');
-                hamburger.classList.add("change"); // Ensure the hamburger menu returns to its original state
-            }
-
-            function closeLinkMenu(){
-                document.getElementById("menu").style.width = "0";
-                document.body.style.marginRight = "0"; // Reset content position
-                document.body.style.overflow = "auto"; // Re-enable scrolling
-
-                const hamburger = document.querySelector('.hamburger');
-                hamburger.classList.remove("change"); // Ensure the hamburger menu returns to its original stat
-            }
-            // Automatically close the menu after clicking a link
-            document.querySelectorAll('.menu-link').forEach(link => {
-                link.addEventListener('click', closeLinkMenu);
-            }); 
-          
-
-                        // Show/Hide the Back-to-Top Button
-            window.onscroll = function() {
-                const backToTopBtn = document.getElementById("backToTopBtn");
-                let navbar = document.getElementsByTagName("nav")[0];
-                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                    backToTopBtn.style.display = "block";
-                } else {
-                    backToTopBtn.style.display = "none";
-                }
-                        // Add shadow when the page is scrolled down
-                if (window.pageYOffset > 0) {
-                    navbar.classList.add("shadow");
-                } else {
-                    navbar.classList.remove("shadow");
-                }
-            };
-
-            // Scroll to the top of the page
-            function scrollToTop() {
-                document.body.scrollTop = 0; // For Safari
-                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-            }
-
-
-
-            // read more
-            function readMore() {
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more-text");
-            var btnText = document.querySelector(".read-more-btn");
-
-                if (dots.style.display === "none") {
-                    dots.style.display = "inline";
-                    btnText.innerHTML = "Read More";
-                    moreText.style.display = "none";
-                } else {
-                    dots.style.display = "none";
-                    btnText.innerHTML = "Read Less";
-                    moreText.style.display = "inline";
-                }
-            }
-            // gallery
-            document.getElementById("see-more-btn").addEventListener("click", function() {
-            const hiddenRows = document.querySelectorAll(".gallery-row.hidden");
-                if (hiddenRows.length > 0) {
-                    hiddenRows[0].classList.remove("hidden");
-                    if (hiddenRows.length === 1) {
-                        this.style.display = 'none'; // Hide the button if no more rows are hidden
-                    }
-                }
-            });
-
-            const galleryItems = document.querySelectorAll(".gallery-item img");
-            const modal = document.getElementById("modal");
-            const modalImg = document.getElementById("expanded-img");
-
-            galleryItems.forEach(item => {
-                item.addEventListener("click", function() {
-                    modal.style.display = "block";
-                    modalImg.src = this.src;
-                    document.querySelectorAll(".gallery-item img").forEach(img => {
-                        if (img !== this) {
-                            img.classList.add("blur");
-                        }
-                    });
-                });
-            });
-
-            document.querySelector(".close").addEventListener("click", function() {
-                modal.style.display = "none";
-                document.querySelectorAll(".gallery-item img").forEach(img => {
-                    img.classList.remove("blur");
-                });
-            });
-
-                //scoll-up animation on load
-                    document.addEventListener("DOMContentLoaded", function() {
-            let scrollElements = document.querySelectorAll(".scroll-element");
-
-            function elementInView(el, offset = 0) {
-                let elementTop = el.getBoundingClientRect().top;
-
-                return (
-                    elementTop <= (window.innerHeight || document.documentElement.clientHeight) - offset
-                );
-            }
-
-            function displayScrollElement() {
-                scrollElements.forEach((el) => {
-                    if (elementInView(el, 150)) {
-                        el.classList.add("in-view");
-                    } else {
-                        el.classList.remove("in-view");
-                    }
-                })
-            }
-
-            window.addEventListener("scroll", () => {
-                displayScrollElement();
-            });
-
-            // Trigger animation on page load
-            displayScrollElement();
-        });
-
-            //Form clear submit
-            
-    const form = document.getElementById('contact-clear');
-    const successMessage = document.getElementById('form-success-message');
-
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-        
-        const formData = new FormData(form);
-
-        fetch(form.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                // Clear the form fields
-                form.reset();
-                
-                // Show the custom success message
-                successMessage.style.display = 'block';
-
-                // Optionally, hide the success message after a few seconds
-                setTimeout(() => {
-                    successMessage.style.display = 'none';
-                }, 5000); // Hide after 5 seconds
-            } else {
-                alert('Oops! There was a problem submitting your form.');
-            }
-        }).catch(error => {
-            console.error('Form submission error:', error);
-            alert('There was a problem submitting your form.');
-        });
-    });
-
-
-                // Get the modal
-            var donateModal = document.getElementById("donationModal");
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("donateBtn");
-        var backHome = document.querySelector(".go-back-btn");
-
-        backHome.onclick = function(){
-            donateModal.style.display = "none"
-        }
-
-        // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-            donateModal.style.display = "block";
-        };
-
-            
-        </script>
+         <script src="https://kit.fontawesome.com/ce7b35a9ec.js" crossorigin="anonymous"></script>
+       
     
-        <script src="https://kit.fontawesome.com/ce7b35a9ec.js" crossorigin="anonymous"></script>
         
 </body>
 </html>
