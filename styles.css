@@ -102,7 +102,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto 0 auto;
-    padding: 30px 70px 0 70px;
+    padding: 20px 70px 0 80px;
     top: 0;
     position: fixed;
     z-index: 111;
@@ -113,8 +113,9 @@ nav.shadow {
     box-shadow: 0px 4px 6px -2px rgb(0, 0, 0, 0.13);
 }
 nav .logo{
-    width: clamp(40px, 10%, 55px);
+    width: clamp(60px, 10%, 100px);
     margin-left: 10px;
+    margin-bottom: 10px;
     z-index: 1111;
 }
 nav .list-flex{
@@ -190,7 +191,7 @@ nav ul li a:hover{
         justify-content: space-between;
         align-items: center;
         margin: 0 auto 0 auto;
-        padding: 20px 20px 10px 20px;
+        padding: 30px 20px 5px 20px;
     }
     nav .list-flex .btn-row{
         display: none;
@@ -288,12 +289,12 @@ nav ul li a:hover{
     .back-to-top {
         display: none;
         position: fixed;
-        bottom: 30px;
-        right: 30px;
+        bottom: 10px;
+        right: 10px;
         z-index: 3;
         font-size: 18px;
-        background-color: #474747;
-        color: white;
+        background-color: #5e5e5e;
+        color: rgb(227, 227, 227);
         border: none;
         padding: 7px 10px;
         border-radius: 5px;
@@ -399,7 +400,7 @@ nav ul li a:hover{
     padding: 150px 0;
 }
 .help .col-1{
-    width: clamp(330px, 70%, 700px);
+    width: clamp(350px, 70%, 700px);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1335,9 +1336,10 @@ footer a{
 }
 .footer-flex .socials a{
     margin-right: 15px;
+    z-index: 11111111;
 }
 .footer-flex .socials a img{
-    width: 22px;
+    width: 27px;
 }
 .footer-flex .line{
     margin-bottom: 20px;
