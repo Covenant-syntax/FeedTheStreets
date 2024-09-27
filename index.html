@@ -25,6 +25,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1
+    ,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     
@@ -72,17 +77,18 @@
         
     <section class="hero scroll-element" id="hero">
         <div class="col-1">
-            <img src="images/Group 7.png" alt="Donation Stat">
-            <h1>FEED THE STREETS<br> <span>with</span> <br>MURPHY THA PREACHER</h1>
+            <!-- <img src="images/Group 7.png" alt="Donation Stat"> -->
+            <h1>Help The Poor and Hungry on the Streets</h1> 
             <p>
-                Over 820 million people globally face hunger every day, while in many urban areas, one in nine individuals struggle with food insecurity. In Nigeria alone, more than 25 million people experience severe food shortages, with vulnerable communities suffering the most. At Feed The Street With MURPHY, we are committed to reducing hunger, one meal at a time, by addressing this urgent need in our local streets.
+                We are a Community Devoted to Fighting World Hunger by Reaching out to Local Vicinities. One Step at a Time, we are starting 
+                from the FCT, Abuja.
             </p>
             <div class="btn-row">
-                <button><a href="#help">Explore More</a></button>
-                <button><a href="payment.html">Donate Now</a></button>
+                <button class="hero-btn-1"><a href="#help">Explore More</a></button>
+                <button class="hero-btn-2"><a href="payment.html">Donate Now</a></button>
             </div>
         </div>
-        <img src="images/Hero.jpg" alt="Children in need" loading="lazy">
+        <!-- <img src="images/Hero.jpg" alt="Children in need" loading="lazy"> -->
     </section>
 
     <!-- mission section FKA help section -->
@@ -349,6 +355,50 @@
             <img class="modal-content" id="expanded-img">
         </div>
 
+
+        <!-- Our Sponsors -->
+            <!-- Slider main container -->
+            <div class="swiper">
+                <h2 class="sponsor-title">Our Sponsors</h2>
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="icons/sponsor1.jpg" alt="Sponsor 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="icons/sponsor2.png" alt="Sponsor 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="icons/sponsor3.png" alt="Sponsor 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="icons/sponsor4.jpg" alt="Sponsor 4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="icons/sponsor5.jpg" alt="Sponsor 5">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="icons/sponsor6.png" alt="Sponsor 6">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="icons/sponsor7.png" alt="Sponsor 7">
+                    </div>
+                
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+              
+
         <!-- contact -->
         <section class="contact" id="contact">
             <div class="container contact-flex">
@@ -465,7 +515,50 @@
          <script src="script.js"></script>
          <script src="https://js.paystack.co/v1/inline.js"></script>
          <script src="https://kit.fontawesome.com/ce7b35a9ec.js" crossorigin="anonymous"></script>
-       
+         <!-- Swiper JS -->
+         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            slidesPerView: 5,
+            spaceBetween: 10,
+            centeredSlides: true,
+            // centerInsufficientSlides: true,
+            // centeredSlidesBounds: true,
+            direction: 'horizontal',
+            loop: true,
+            
+            autoplay: {
+                delay: 3000,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                300: {
+                    slidesPerView: 3,
+                },
+                500: {
+                    slidesPerView: 4,
+                },
+                768: {
+                slidesPerView: 4, /* Fewer slides on smaller screens */
+                },
+                1024: {
+                slidesPerView: 4,
+                }
+
+            }
+
+        });
+       </script>
     
         
 </body>
